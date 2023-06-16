@@ -1,12 +1,12 @@
 <template>
     <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 class="text-4xl font-bold mb-4">Welcome to My App!</h1>
-      <p class="text-lg text-gray-600 mb-6">This is the startpage of the application. Here are some key features:</p>
+      <h1 class="text-4xl font-bold mb-4">MSTW</h1>
+      <p class="text-lg text-gray-600 mb-6"> A vue app</p>
         <ul class="text-lg text-gray-600 mb-6 list-disc list-inside">
-            <li>It uses Vue Router for navigation</li>
-            <li>It uses Tailwind CSS for styling</li>
+            <li>Yatzy</li>
+            <li>Stryktipset</li>
             <li>It uses Axios for fetching data from Google Sheets</li>
-            <li>It uses Vue.js for reactive data</li>
+            
         </ul>
       <div class="space-x-4">
         <router-link to="/sheet-data" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
