@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import SheetData from './components/SheetData.vue';
 import StartPage from './components/StartPage.vue';
+import StryktipsetPage from './components/StryktipsetPage.vue';
+import JatzyPage from './components/JatzyPage.vue';
+import V75Page from './components/V75Page.vue';
 
 const routes = [
   {
@@ -12,6 +15,21 @@ const routes = [
     path: '/sheet-data',
     name: 'SheetData',
     component: SheetData
+  },
+  {
+    path: '/yatzy',
+    name: 'Yatzy',
+    component: JatzyPage
+  },
+  {
+    path: '/stryktipset',
+    name: 'Stryktipset',
+    component: StryktipsetPage
+  },
+  {
+    path: '/v75',
+    name: 'V75',
+    component: V75Page
   }
 ];
 
