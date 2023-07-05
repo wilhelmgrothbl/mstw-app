@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     async getSheetData() {
-      const response = await axios.get('https://sheets.googleapis.com/v4/spreadsheets/1YvFeUsA_BHsMJ98Rh5fP9XQdHMurqwXtMAagMDeZxaY/values/V75!A1:AN67?key=AIzaSyANbHKpbR0EXWbGrisgtJoOzkx8xiGNA0o');
+      const response = await axios.get('https://sheets.googleapis.com/v4/spreadsheets/1YvFeUsA_BHsMJ98Rh5fP9XQdHMurqwXtMAagMDeZxaY/values/Blankett!A1:AN67?key=AIzaSyANbHKpbR0EXWbGrisgtJoOzkx8xiGNA0o');
       this.headers = response.data.values[0].slice(0, 40); // Anpassa för att endast ta med kolumnerna A till AN
       this.data = response.data.values.slice(1, 67); // Anpassa för att endast ta med raderna 2 till 67
       console.log(this.headers);
