@@ -104,8 +104,8 @@
                     {{ totaltInspelatData[2] }} kr
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap">
-                    {{ totaltInspelatData[3] }} kr
-                  </td>
+                    {{ totaltInspelatData[3] }} kr 
+                  </td>   
                 </tr>
               </tbody>
             </table>
@@ -119,7 +119,7 @@
                     <th
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
-                      Total insats           
+                      Total insats                 
                     </th>
                     <th
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
