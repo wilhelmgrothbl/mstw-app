@@ -62,13 +62,13 @@
 
 
 <script setup>
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/vue/20/solid'
+import { LifebuoyIcon, NewspaperIcon,} from '@heroicons/vue/20/solid'
 
 const cards = [
   {
-    name: 'Jatzy',
-    description: 'Historik från tusentals Jatzy-spel.',
-    icon: PhoneIcon,
+    name: 'Vem tippar bäst?',
+    description: 'Historik från flera Stryktipsomgångar.',
+    icon: LifebuoyIcon,
   },
   {
     name: 'Stryktipset',
@@ -77,14 +77,14 @@ const cards = [
   },
   {
     name: 'V75',
-    description: 'Stora vinster från V75.',
+    description: 'Historik från V75. ',
     icon: NewspaperIcon,
   },
 ]
 const stats = [
-  { id: 1, name: 'Vinster', value: '$0' },
-  { id: 2, name: 'Antal Yatzy spel', value: '30 303' },
-  { id: 3, name: 'Förluster', value: '$33 000' },
+  { id: 1, name: 'Vinster', value: '2 387:-' },
+  { id: 2, name: 'Antal Stryktipsomgångar', value: '31 st' },
+  { id: 3, name: 'Totalt', value: '-9 647:-' },
 ]
 </script>
 

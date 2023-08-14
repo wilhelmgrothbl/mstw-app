@@ -11,7 +11,6 @@
 
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <router-link to="/yatzy" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Yatzy</router-link>
               <router-link to="/stryktipset" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Stryktipset</router-link>
               <router-link to="/v75" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">V75</router-link>
               <router-link to="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Hem</router-link>
