@@ -111,7 +111,7 @@
             </table>
             <div class="mt-4">
               <h2 class="text-2xl font-semibold mb-4 text-blue-900">
-                Total insats, vinst och brutto
+                Total insats, vinst och Netto
               </h2>
               <table class="min-w-full divide-y divide-gray-900 shadow-sm">
                 <thead class="bg-gray-200">
