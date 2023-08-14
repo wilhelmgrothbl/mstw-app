@@ -129,7 +129,7 @@
                     <th
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
-                    Netto
+                      Netto
                     </th>
                   </tr>
                 </thead>
@@ -143,6 +143,53 @@
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap">
                       {{ brutto }}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-2xl font-semibold mb-4 text-blue-900">
+                Antal rätt per spelläggare
+              </h2>
+              <table class="min-w-full divide-y divide-gray-900 shadow-sm">
+                <thead class="bg-gray-200">
+                  <tr>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Mattias
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Stefan
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Thomas
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    >
+                      Wille
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      {{ antalRatt[0] }} rätt
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      {{ antalRatt[1] }} rätt
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      {{ antalRatt[2] }} rätt
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      {{ antalRatt[3] }} rätt
                     </td>
                   </tr>
                 </tbody>
@@ -164,6 +211,7 @@ export default {
     return {
       stryktipsetData: [],
       totaltInspelatData: {},
+      antalRatt: [],
     };
   },
   methods: {
@@ -178,6 +226,10 @@ export default {
           "https://sheets.googleapis.com/v4/spreadsheets/1YvFeUsA_BHsMJ98Rh5fP9XQdHMurqwXtMAagMDeZxaY/values/TotaltInspelat!G1:J3?key=AIzaSyANbHKpbR0EXWbGrisgtJoOzkx8xiGNA0o"
         );
         this.totaltInspelatData = totaltInspelatResponse.data.values[1];
+        const antalRattResponse = await axios.get(
+      "https://sheets.googleapis.com/v4/spreadsheets/1YvFeUsA_BHsMJ98Rh5fP9XQdHMurqwXtMAagMDeZxaY/values/TotaltInspelat!K2:N2?key=AIzaSyANbHKpbR0EXWbGrisgtJoOzkx8xiGNA0o"
+    );
+    this.antalRatt = antalRattResponse.data.values[0];
       } catch (error) {
         console.error(error);
       }
