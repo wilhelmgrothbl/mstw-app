@@ -14,6 +14,7 @@
               <router-link to="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Hem</router-link>
               <router-link to="/stryktipset" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Stryktipset</router-link>
               <router-link to="/v75" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">V75</router-link>
+              <router-link to="/skryt"  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"> Skryt</router-link>
             </div>
           </div>
         </div>

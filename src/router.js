@@ -3,6 +3,7 @@ import SheetData from './components/SheetData.vue';
 import StartPage from './components/StartPage.vue';
 import StryktipsetPage from './components/StryktipsetPage.vue';
 import V75Page from './components/V75Page.vue';
+import Skryt from './components/skryt.vue';
 
 const routes = [
   {
@@ -24,7 +25,12 @@ const routes = [
     path: '/v75',
     name: 'V75',
     component: V75Page
-  }
+  },
+  {
+    path: '/skryt', 
+    name: 'Skryt',
+    component: Skryt 
+  },
 ];
 
 const router = createRouter({
